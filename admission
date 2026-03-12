@@ -1,0 +1,28 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        int age,mrk;
+        Scanner s=  new Scanner(System.in);
+        age=s.nextInt();
+        mrk=s.nextInt();
+        if(age>=18)
+        {
+           if(mrk>=40)
+           {
+               System.out.println("Eligible");
+           }
+        else
+        {
+            System.out.println("Not Eligible");
+        }
+        }
+        else
+        {
+            System.out.println("Invalid");
+        }
+    }
+}
+    
