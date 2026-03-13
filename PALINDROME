@@ -1,0 +1,29 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        int n;
+        int rev=0;
+     
+         Scanner s=new Scanner(System.in);
+        n=s.nextInt();
+           int temp=n;
+        while(n>0)
+        {
+            int dig=n%10;
+            rev=rev*10+dig;
+            n=n/10;
+        }
+        if(temp==rev)
+        
+            System.out.println("Palindrome");
+        
+        else
+       {
+            System.out.println("Not Palindrome");
+            
+        }
+    }
+}
